@@ -1,0 +1,44 @@
+.box {
+  text-align: center;
+  padding-top: 25px;
+  border-bottom: 3px solid;
+  background-color: #10689a;
+  border-top: 3px solid #fff;
+}
+.novigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+.button {
+  font: inherit;
+  display: block;
+  width: auto;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: inherit;
+  border: 3px solid #fefefe;
+  background: #10689a;
+  border-color: #fefefe;
+}
+
+.button:hover,
+.button:focus {
+  background: #1478b1;
+}
+.boxPage {
+  width: 40px;
+  border: 3px solid #fefefe;
+}
+.boxTasks
+{
+    
+    width: 800px;
+    margin: auto;
+    background-color: #47a3da;
+    margin-bottom: 25px;
+    border: 3px solid #fff;
+}
