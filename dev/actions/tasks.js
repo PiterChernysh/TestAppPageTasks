@@ -35,7 +35,6 @@ export const addTask = ({
   username,
   email,
   text,
-  setStatusAction
 }) => dispatch => {
   let formData = new FormData();
   formData.append("username", username);
@@ -67,7 +66,6 @@ export const getTasks = ({
   page,
   setTaskLenght,
   setTasksList,
-  setStatusAction
 }) => dispatch => {
   axios
     .get(

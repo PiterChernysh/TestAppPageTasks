@@ -392,32 +392,11 @@ body
 {
     display: flex;
 }
-.box--2-_Vl
-{
-    
-    width: 800px;
-    margin: auto;
-    background-color: #47a3da;
-    margin-bottom: 25px;
-    border: 3px solid #fff;
-}
 .list--P_nap
 {
     margin: 30px 40px 0;
     padding: 0;
     list-style-type: none;
-}
-.novigation--1gO8v{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.box--uyOx8 {
-  text-align: center;
-  padding-top: 25px;
-  border-bottom: 3px solid;
-  background-color: #10689a;
-  border-top: 3px solid #fff;
 }
 .novigation--L5Eyw {
   display: flex;
@@ -426,23 +405,6 @@ body
   margin: 15px;
 }
 
-.button--3j8x4 {
-  font: inherit;
-  display: block;
-  width: auto;
-  cursor: pointer;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: inherit;
-  border: 3px solid #fefefe;
-  background: #10689a;
-  border-color: #fefefe;
-}
-
-.button--3j8x4:hover,
-.button--3j8x4:focus {
-  background: #1478b1;
-}
 .boxPage--3GHpM {
   width: 40px;
   border: 3px solid #fefefe;
@@ -474,51 +436,6 @@ body
     background: #1478b1;
 }
 
-.edit--2Db4l
-{
-    border: 3px solid #fefefe;
-}
-
-.menu--3Qt0E
-{
-    border: 3px solid #fefefe;
-    background-color: #53a9db;
-}
-
-
-.small--1Ql67
-{
-    margin: 0;
-    padding: 0;
-
-    transition: opacity .3s linear;
-
-    opacity: .7;
-
-    will-change: transform;
-}
-
-.small--1Ql67:hover
-{
-    opacity: 1;
-    background: transparent;
-}
-
-.small--1Ql67 svg
-{
-    width: 20px;
-    height: 20px;
-    fill: #fff;
-
-    transition: transform .3s linear;
-
-    will-change: transform;
-}
-
-.small--1Ql67:hover svg
-{
-    transform: scale(1.3)
-}
 
 .form--2alR5 {
   text-align-last: left;

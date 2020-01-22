@@ -1,11 +1,10 @@
 const path = require("path");
-const webpack = require('webpack');
-// const CopyWebpackPlugin = require("copy-webpack-plugin");
+const webpack = require("webpack");
 const MiniCSSExtractPlugin = require("mini-css-extract-plugin");
 const WebpackMd5Hash = require("webpack-md5-hash");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const Dotenv = require('dotenv-webpack');
+const Dotenv = require("dotenv-webpack");
 
 const env = process.env.NODE_ENV || "development";
 const isDev = env === "development";
@@ -71,12 +70,6 @@ module.exports = {
     new webpack.DefinePlugin({
       __DEV__: isDev
     }),
-    // new CopyWebpackPlugin([
-    //   {
-    //     from: path.resolve("./dev/static"),
-    //     to: path.resolve("./site")
-    //   }
-    // ])
     new HtmlWebpackPlugin({
       inject: false,
       template: "./dev/template/index.html",

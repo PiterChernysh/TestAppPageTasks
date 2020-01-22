@@ -1,13 +1,11 @@
-import React, {useState, useEffect} from "react";
-import { connect } from "react-redux";
+import React from "react";
+import MyContext from "../../context";
 
 import TaskItem from "../TaskItem";
 import styles from "./style.css";
-import { conectContext } from "../../TaskContext/conectContext";
 
-const TasksList = conectContext(({ tasksList, userActive, page }) => {
+const TasksList = ({ tasksList, userActive, page }) => {
   return (
-    <>
       <ul className={styles.list}>
         {tasksList[page]?tasksList[page].map(item => {
           if (item.id)
@@ -16,12 +14,13 @@ const TasksList = conectContext(({ tasksList, userActive, page }) => {
             );
         }):''}
       </ul>
-    </>
   );
-});
+};
 
-const mapStateToProps = store => ({
-  tasks: store.tasks
-});
+export default props => (
+  <MyContext.Consumer>
+    {context => <TasksList {...context} {...props} />}
+  </MyContext.Consumer>
+);
 
-export default connect(mapStateToProps)(TasksList);
+

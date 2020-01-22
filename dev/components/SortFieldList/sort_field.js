@@ -8,7 +8,7 @@ const SortField = ({ setSort_field, sorting_field_list, sortStateEdit }) => {
     const val = event.target.value;
     setState(val);
     setSort_field(val);
-    sortStateEdit();
+    sortStateEdit("field");
   };
 
   const handleSubmit = event => {

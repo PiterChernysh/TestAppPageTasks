@@ -8,7 +8,7 @@ const SortField = ({ setSort_direction, sorting_direction_list, sortStateEdit })
     const val = event.target.value;
     setState(val);
     setSort_direction(val);
-    sortStateEdit();
+    sortStateEdit("direction`");
   };
 
   const handleSubmit = event => {

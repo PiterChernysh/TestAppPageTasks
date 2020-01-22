@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 
 import styles from "./style.css";
-import { conectContext } from "../../TaskContext/conectContext";
+import MyContext from "../../context";
 import Sort_field from "../SortFieldList/sort_field";
 import Sort_direction from "../SortFieldList/sort_direction";
 import Button from "../Button";
 
-const SortTask = conectContext(props => {
+const SortTask = props => {
   const { page, setPage, sortStateEdit } = props;
   const editPage = type => {
     setPage(type === "-" ? page - 1 : page + 1);
@@ -25,6 +25,10 @@ const SortTask = conectContext(props => {
       </Button>
     </div>
   );
-});
+};
 
-export default SortTask;
+export default props => (
+  <MyContext.Consumer>
+    {context => <SortTask {...context} {...props} />}
+  </MyContext.Consumer>
+);
